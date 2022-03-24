@@ -23,7 +23,7 @@ class birth(Variable):
     value_type = date
     default_value = date(1970, 1, 1)  # By default, if no value is set for a simulation, we consider the people involved in a simulation to be born on the 1st of Jan 1970.
     entity = Person
-    label = "Birth date"
+    label = "Geboortedatum"
     definition_period = ETERNITY  # This variable cannot change over time.
     reference = "https://en.wiktionary.org/wiki/birthdate"
 
@@ -32,7 +32,7 @@ class age(Variable):
     value_type = int
     entity = Person
     definition_period = MONTH
-    label = "Person's age (in years)"
+    label = "Leeftijd persoon (in jaren)"
 
     def formula(person, period, _parameters):
         """

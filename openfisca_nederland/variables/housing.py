@@ -52,7 +52,7 @@ class housing_occupancy_status(Variable):
 
 class postal_code(Variable):
     value_type = str
-    max_length = 5
+    max_length = 6
     entity = Household
     definition_period = MONTH
-    label = "Postal code of the household"
+    label = "Postcode huishouden"
